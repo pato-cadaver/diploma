@@ -1,0 +1,25 @@
+.app {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+
+  width: 800px;
+  height: 200px;
+  
+  background: rgb(101, 75, 13);
+  
+  .app-name{
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .content{
+    .column{
+      margin:0;
+      padding: 0;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import logo from "../../logo.svg";
-import './App.css';
+
+import './App.scss';
 
 import Cities from "../Cities/Cities";
 import CityStorage from "../CityStorage/CityStorage";
@@ -8,16 +8,21 @@ import Transportations from "../Transportations/Transportations";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img scr={logo} className="App-logo" alt="logo"/>
-      </header>
+    <div className="app">
+      <div>
+      <h1 className="app-name">
+      Спекулянт
+      </h1>
 
+      <div className="content">
+        <div className="column"></div>
+        <div className="column"></div>
+      </div>
       <Cities />
       <CityStorage />
       <Storage />
       <Transportations />
-
+      </div>
     </div>
   );
 }
