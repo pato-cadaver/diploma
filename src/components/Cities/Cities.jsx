@@ -1,6 +1,6 @@
 import "./Cities.scss";
 
-function Cities() {
+function Cities(props) {
   const cities = [
     {
       id: 1,
@@ -16,13 +16,18 @@ function Cities() {
     },
   ];
 
-  const currentCity = 2;
-
   return (
     <div className="cities-list">
       {cities.map((city: { id: number, title: string }) => {
         return (
-          <a className={"city" + (currentCity === city.id ? "active" : "")} href="#">
+          <a
+            className={"city" + (props.currentCity === city.id ? "active" : "")}
+            href="#"
+            onClick={()=>{
+              //change currentCity
+              props.onChange(city.id);
+            }}
+          >
             {city.title}
           </a>
         );

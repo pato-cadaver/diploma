@@ -10,10 +10,9 @@
     display: inline-block;
     padding: 5px 20px;
 
-    &.active{
+    &:active{
         font-weight: 700;
-        text-decoration: none;
+        text-decoration:none;
       }
   }
-  
 }
