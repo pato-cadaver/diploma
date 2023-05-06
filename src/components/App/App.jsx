@@ -14,14 +14,26 @@ function App() {
       Спекулянт
       </h1>
 
-      <div className="content">
-        <div className="column"></div>
-        <div className="column"></div>
-      </div>
       <Cities />
-      <CityStorage />
-      <Storage />
-      <Transportations />
+
+      <div className="content">
+        <div className="column">
+          <div className="storage">
+            <Storage />
+          </div>
+          <div className="transportations">
+            <Transportations />
+          </div>
+        
+        
+        </div>
+        <div className="column">
+        <div className="city-storage">
+        <CityStorage />
+        </div>
+        </div>
+      </div>
+      
       </div>
     </div>
   );

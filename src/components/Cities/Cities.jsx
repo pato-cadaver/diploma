@@ -1,12 +1,32 @@
-
-import './Cities.scss';
+import "./Cities.scss";
 
 function Cities() {
+  const cities = [
+    {
+      id: 1,
+      title: "Город1",
+    },
+    {
+      id: 2,
+      title: "Город2",
+    },
+    {
+      id: 3,
+      title: "Город3",
+    },
+  ];
+
+  const currentCity = 2;
+
   return (
     <div className="cities-list">
-     <a className="city" href="#">Город1</a>
-     <a className="city" href="#">Город2</a>
-     <a className="city" href="#">Город3</a> 
+      {cities.map((city: { id: number, title: string }) => {
+        return (
+          <a className={"city" + (currentCity === city.id ? "active" : "")} href="#">
+            {city.title}
+          </a>
+        );
+      })}
     </div>
   );
 }

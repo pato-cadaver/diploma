@@ -6,7 +6,7 @@
   width: 800px;
   height: 200px;
   
-  background: rgb(101, 75, 13);
+  background: rgb(72, 104, 35);
   
   .app-name{
     color: white;
@@ -17,9 +17,13 @@
   }
 
   .content{
+    display:flex;
+    justify-content: space-between;
+
     .column{
-      margin:0;
-      padding: 0;
+      background: #b69292;
+      width: 48%;
+      padding: 10px 0;
     }
   }
 }
