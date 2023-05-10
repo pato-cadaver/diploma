@@ -18,12 +18,12 @@ function Cities(props) {
 
   return (
     <div className="cities-list">
-      {cities.map((city: { id: number, title: string }) => {
+      {cities.map((city) => {
         return (
           <a
             className={"city" + (props.currentCity === city.id ? "active" : "")}
             href="#"
-            onClick={()=>{
+            onClick={() => {
               //change currentCity
               props.onChange(city.id);
             }}
